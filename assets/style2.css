@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-black: black;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  background: var(--color-white);
+  line-height: 1.7;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  margin: 40px;
+}
+
+.section-m1 {
+  margin: 30px 0;
+}
+
+/* header start */
+
+nav img {
+  width: 200px;
+}
+
+nav {
+  transition: all 0.5s ease;
+}
+
+.visible {
+  background-color: #fff;
+}
+
+/* header end */
+
+/* tab new start */
+.tabContainer {
+  width: 100%;
+  padding: 50px;
+}
+.tabContainer .buttonContainer {
+  height: 15%;
+}
+.tabContainer .buttonContainer button {
+  width: 33.3333%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgb(248, 248, 248);
+}
+.tabContainer .buttonContainer button:hover {
+  background-color: #d7d4d4;
+}
+.tabContainer .tabPanel {
+  height: 85%;
+  background-color: gray;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 105px;
+  font-size: 22px;
+  display: none;
+}
+
+.tabContainer .tabPanel h2 {
+  color: black;
+}
+
+/* Home page start */
+
+#cta .container-fluid {
+  padding: 7% 15%;
+}
+
+.big-heading {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+#cta {
+  background-image: url(../assets/images/imagePT/9.jpg);
+  background-size: cover;
+}
+
+/* home page end */
+
+/* about us start */
+
+#about {
+  padding: 92px 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about h2 {
+  color: var(--color-black);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#about p {
+  color: var(--color-black);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* about us end */
+
+/* feature start */
+.gold-section {
+  /* background-color: #a37f43; */
+  background-image: linear-gradient(to bottom right, #a37f43, #dfb060);
+  margin: 1px;
+}
+
+#features {
+  position: relative;
+}
+
+#features h2 {
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.feature-box {
+  padding: 3%;
+}
+
+.icon {
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #fff;
+}
+
+/* feature end */
+
+/* product start */
+.white-section {
+  background-color: #fff;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+#pricing h2 {
+  color: black;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 13%;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  transition: 0.3s ease;
+}
+
+.card-title {
+  color: black;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px goldenrod;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: goldenrod;
+}
+
+/* product end */
+
+/* Contact start */
+#contact h2 {
+  color: var(--color-primary);
+}
+
+/* Contact end */
+
+/* footer start */
+#footer .container-fluid {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to bottom right, #a37f43, #dfb060);
+}
+
+#footer i {
+  padding-left: 30px;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: white;
+}
+/* footer end */
+
+/* media query start */
+@media only screen and (max-width: 1124px) and (min-width: 768px) {
+  #carouselExample-0 img {
+    width: 100%;
+    min-height: 350px;
+  }
+  #carouselExample-1 img {
+    width: 100%;
+    min-height: 350px;
+  }
+  #carouselExample-2 img {
+    width: 100%;
+    min-height: 350px;
+  }
+  #carouselExample-3 img {
+    width: 100%;
+    min-height: 350px;
+  }
+  #carouselExample-4 img {
+    width: 100%;
+    min-height: 350px;
+  }
+  #carouselExample-5 img {
+    width: 100%;
+    min-height: 350px;
+  }
+  #carouselExample-6 img {
+    width: 100%;
+    min-height: 350px;
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  .tabContainer {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* media query end */

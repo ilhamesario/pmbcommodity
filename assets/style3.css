@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* header start */
+nav img {
+  width: 200px;
+}
+
+nav {
+  transition: all 0.5s ease;
+}
+
+.visible {
+  background-color: #fff;
+}
+/* header end */
+
+/* contact start */
+.contact {
+  padding: 50px 50px;
+  min-height: 96vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/imagePT/contact.jpg);
+  background-size: cover;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-top: 100px;
+  color: goldenrod;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.card {
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #2f3542;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 40px;
+  padding-bottom: 80px;
+}
+
+.cards-icon {
+  font-size: 28px;
+  background: goldenrod;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.4s linear;
+}
+
+.card:hover .cards-icon {
+  background: none;
+  color: goldenrod;
+  transform: scale(1.5);
+}
+
+.card p {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p {
+  opacity: 1;
+  color: white;
+}
+/* end contact */
+
+/* footer start */
+#footer .container-fluid {
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #a37f43, #dfb060);
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer p {
+  margin: 0;
+}
+
+.social-icon {
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: white;
+}
+/* footer end */
+
+/* media query start */
+
+/* media query end */
